@@ -1,0 +1,11 @@
+@font-face { font-family: 'Raleway'; src: url('fonts/Raleway-Regular.ttf'); }
+@font-face { font-family: 'URWGeometric'; src: url('fonts/URWGeometric-Regular.ttf');}
+
+h1 {
+  font-family: 'URWGeometric';
+}
+
+p {
+  font-family: 'Raleway';
+
+}
