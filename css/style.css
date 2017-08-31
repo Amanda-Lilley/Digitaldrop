@@ -1,11 +1,151 @@
-@font-face { font-family: 'Raleway'; src: url('fonts/Raleway-Regular.ttf'); }
-@font-face { font-family: 'URWGeometric'; src: url('fonts/URWGeometric-Regular.ttf') format('truetype');}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf');
+}
 
-h1 {
+@font-face {
   font-family: 'URWGeometric';
+  src: url('../fonts/URWGeometric-Regular.ttf') format('truetype');
+}
+
+
+/* Fonts */
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  color: #3f3d3d;
+}
+
+h1, h2, h3 {
+  font-family: 'URWGeometric', Arial, sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #fd475f;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 p {
-  font-family: 'Raleway';
+  font-size: 1.000em;
+  line-height: 19px;
+  font-weight: 100;
+  text-align: center;
+}
 
+nav a {
+  font-family: 'URWGeometric', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3f3d3d;
+}
+
+
+/* Button */
+
+button {
+  background-color: #fd475f;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 200px;
+  height: 30px;
+  padding: 20px, auto, 30px;
+  margin: auto;
+  display: block;
+}
+
+button a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* Header */
+header {
+  background: linear-gradient(90deg,#a9a9a9, #e9e9e9);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_img {
+  margin: auto;
+  padding: 50px;
+}
+
+
+/* Benefits */
+
+div .benefits {
+  background-color: #ffffff;
+}
+
+.benefits p {
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+
+}
+
+.notes {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/* Pricing */
+.pricing {
+  background: linear-gradient(90deg,#a9a9a9, #e9e9e9);
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.pricing p {
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+
+}
+
+.box {
+  display: block;
+  margin: auto;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.5em;
+
+}
+
+ul {
+  list-style: none;
+}
+.title {
+  background-color: #fd475f;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.pricing_info {
+  padding-bottom: 30px;
 }
