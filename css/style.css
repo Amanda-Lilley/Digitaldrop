@@ -59,13 +59,13 @@ button {
   border-radius: 4px;
   text-decoration: none;
   width: 200px;
-  height: 30px;
+  height: 35px;
   padding: 20px, auto, 30px;
   margin: auto;
   display: block;
 }
 
-button a {
+.btn a {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
@@ -91,11 +91,15 @@ header {
 
 /* Benefits */
 
-div .benefits {
+.benefits {
   background-color: #ffffff;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.benefits p {
+
+.wrapper p {
 text-align: center;
 margin-left: 10%;
 margin-right: 10%;
@@ -116,12 +120,6 @@ margin-right: 10%;
 
 }
 
-.pricing p {
-text-align: center;
-margin-left: 10%;
-margin-right: 10%;
-
-}
 
 .box {
   display: block;
@@ -148,4 +146,52 @@ ul {
 
 .pricing_info {
   padding-bottom: 30px;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f7f7f7;
+}
+
+.who {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 50px;
+}
+.testimony {
+  display: block;
+  margin: auto;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.5em;
+padding-top:20px;
+margin-bottom: 30px;
+}
+
+.profile {
+  background-color: #e2e2e2;
+}
+.profile_img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Footer */
+.social {
+  display: block;
+  text-align: center;
+}
+.social i {
+  color: #fd475f;
+  letter-spacing: 5px;
+}
+.email {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  outline: none;
 }
