@@ -127,6 +127,10 @@ header {
 
 
 /* Pricing */
+.pricing_header {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
 .pricing {
   background: linear-gradient(45deg, #a9a9a9, #e9e9e9);
@@ -254,15 +258,64 @@ footer {
 }
 /* Media Queries */
 @media (min-width: 768px) {
-  main {
+  /* Benefits */
+  .benefits_wrapper {
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.left {
-  grid-row-start: 1;
-}
-.right {
+.box2 {
   grid-column-start: 2;
+  grid-row: 1;
 }
+.box4 {grid-column-start: 2;
+  grid-row: 2;
+}
+.box5 {
+  grid-column-start: 1;
+  grid-row: 3;
+}
+.benefits {
+  margin: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/* Pricing */
+.pricing {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  margin:auto;
+}
+.pricing_content {
+  grid-row: 2;
+}
+.pricing_content {
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.casual {
+  grid-column-start: 1;
+  grid-row: 1;
+
+  margin: auto;
+  width: 90%;
+
+  }
+.professional {
+  grid-column-start: 2;
+  grid-row: 1;
+  margin: auto;
+  width: 90%;
+
+  }
+.expert {
+  grid-column-start: 3;
+  grid-row: 1;
+  margin: auto;
+  width: 90%;
+
+  }
+
 }
