@@ -252,3 +252,14 @@ footer {
   padding-bottom: 5px;
   margin-top: 20px;
 }
+/* Media Queries */
+@media (min-width: 768px) {
+  main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  grid-row-start: 1;
+}
+}
