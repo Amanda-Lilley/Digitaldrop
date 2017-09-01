@@ -262,4 +262,7 @@ footer {
 .left {
   grid-row-start: 1;
 }
+.right {
+  grid-column-start: 2;
+}
 }
