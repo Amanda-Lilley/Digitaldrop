@@ -317,5 +317,39 @@ grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
 
   }
+  /* Testimonials */
+  span {
+    font-weight: bold;
+  }
+  .testimonial_content {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  #testimony1 {
+    grid-column-start: 1;
+    grid-row: 1;
+    margin: auto;
+    width: 90%;
+  }
+  #testimony2 {
+    grid-column-start: 2;
+    grid-row: 1;
+    margin: auto;
+    width: 90%;
+  }
+  #testimony3 {
+    grid-column-start: 3;
+    grid-row: 1;
+    margin: auto;
+    width: 90%;
+  }
+}
 
 }
