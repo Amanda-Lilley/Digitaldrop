@@ -99,6 +99,7 @@ header {
 }
 
 .hero_img {
+
   margin: auto;
   padding: 50px;
 }
@@ -206,11 +207,12 @@ ul {
 
 
 /* Footer */
+.social h3 {
+  margin-bottom: 10px;
+}
 footer {
   background-color: #e2e2e2;
   padding-top: 30px;
-  padding-bottom: 30px;
-
 }
 .social {
   display: block;
@@ -220,6 +222,7 @@ footer {
 .social i {
   color: #fd475f;
   letter-spacing: 5px;
+  font-size: 22px;
 }
 
 .email {
@@ -240,6 +243,7 @@ footer {
 .footer {
   display: block;
   text-align: center;
+
 }
 .footer-links a {
   color: #2e96c4;
@@ -257,6 +261,7 @@ footer {
   margin-top: 20px;
 }
 /* Media Queries */
+
 @media (min-width: 768px) {
   /* Benefits */
   .benefits_wrapper {
@@ -268,7 +273,8 @@ footer {
   grid-column-start: 2;
   grid-row: 1;
 }
-.box4 {grid-column-start: 2;
+.box4 {
+  grid-column-start: 2;
   grid-row: 2;
 }
 .box5 {
@@ -290,6 +296,7 @@ footer {
   grid-template-rows: auto;
   grid-gap: 20px;
   margin:auto;
+  padding-bottom: 50px;
 }
 .pricing_content {
   grid-row: 2;
@@ -301,25 +308,22 @@ grid-template-columns: 1fr 1fr 1fr;
 .casual {
   grid-column-start: 1;
   grid-row: 1;
-
   margin: auto;
   width: 90%;
-
   }
 .professional {
   grid-column-start: 2;
   grid-row: 1;
   margin: auto;
   width: 90%;
-
   }
 .expert {
   grid-column-start: 3;
   grid-row: 1;
   margin: auto;
   width: 90%;
-
   }
+
   /* Testimonials */
   span {
     font-weight: bold;
@@ -357,6 +361,49 @@ grid-template-columns: 1fr 1fr 1fr;
     padding-right:2%;
     padding-left: 2%;
   }
+
+  /* Footer */
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .social_links {
+    grid-column-start: 1;
+  }
+  .footer {
+    grid-column-start: 1;
+    grid-row: 2;
+  }
+
+  .footer-logo{
+    grid-column-start: 3;
+grid-row: 1;
+
+  }
+  .footer_links {
+    grid-column-start: 2;
+    grid-row: 2;
+  }
+  .newsletter {
+    grid-column-start: 2;
+  }
+  .social i {
+    font-size: 32px;
+  }
+
+.email{
+  display: inline-block;
+  height: 35px;
+
+}
+.email_btn {
+  display:inline-block;
+
+  width: 80px;
+  margin-left: -5px;
+  margin-right: 0;
+  border: none;
+  padding: 0;
 
 }
 
