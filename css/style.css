@@ -463,19 +463,13 @@ grid-row: 1;
 /* Dashboard ----------------------------------------- */
 
 .dashboard {
-  background: #e2e2e2;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr, repeat(4, 2fr);
-  grid-gap: 20px;
-  grid-template-areas:
-  "left_nav header header header header"
-  "left_nav main main main main"
-  "left_nav main main main main"
-  "left_nav main main main main"
-  "left_nav main main main main"
+    background: #e2e2e2;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px auto;
+    grid-gap: 20px;
+    grid-template-areas: "left_nav header" "left_nav main";
 }
-
 /* Navigation */
 .left_nav {
   grid-area: left_nav;
@@ -502,6 +496,12 @@ padding-left: 20px;
 .items i {
   padding-right: 5px;
 }
+.profile_settings {
+  display:inline-block;
+}
+.profile_img {
+  width: 30%;
+}
 /* Header */
 .header {
   background: #e2e2e2;
@@ -510,97 +510,36 @@ padding-left: 20px;
 .header_content {
   display: flex;
   justify-content: flex-end;
-  padding-left: 10px;
-  padding-left: 10px;
+
 }
 .header_content h1 {
   color: #3f3d3d;
   font-weight: 100;
 }
-
-
 .add {
   width: 100px;
   margin-right: 20px;
 }
-
-
 #all_items {
   margin-right: auto;
+}
 
-}
-.profile_settings {
-  display:inline-block;
-}
-.profile_img {
-  width: 30%;
-}
 /* Main gallery */
 .main {
   grid-area: main;
   background: green;
   margin-right: 20px;
   display: grid;
-  grid-template-columns: repeat (4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  grid-template-rows: repeat (4, 1fr);
+  padding-bottom: 20px;
 }
-.one {
+.one img {
+  object-fit:cover;
+}
+.gallery_item {
   background: #fff;
 }
-.two {
-  grid-column-start: 2;
-  background: #fff;
-}
-.three {
-  grid-column-start: 3;
-  background: #fff;
-}
-.four {
-  grid-column-start: 4;
-  background: #fff;
-}
-.five {
-  grid-column-start: 1;
-  grid-row: 2;
-  background: #fff;
-}
-.six {
-  grid-column-start: 2;
-  grid-row: 2;
-  background: #fff;
-}
-.seven {
-  grid-column-start: 3;
-  grid-row: 2;
-  background: #fff;
-}
-.eight {
-  grid-column-start: 4;
-  grid-row: 2;
-  background: #fff;
-}
-.nine {
-  grid-column-start: 1;
-  grid-row: 3;
-  background: #fff;
-}
-.ten {
-  grid-column-start: 2;
-  grid-row: 3;
-  background: #fff;
-}
-.eleven {
-  grid-column-start: 3;
-  grid-row: 3;
-  background: #fff;
-}
-.twelve {
-  grid-column-start: 4;
-  grid-row: 3;
-  background: #fff;
-}
-
 
 /*
 .gallery {
