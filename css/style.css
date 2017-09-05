@@ -550,6 +550,13 @@ background: none;
     grid-template-columns: repeat(4, calc(25vw - 75px));
     grid-template-rows: repeat(4, calc(25vw - 75px));
     grid-gap: 20px;
+}
+
+@media (max-width: 768px){
+  .main {
+    grid-template-columns: repeat(2, calc(50vw - 130px));
+    grid-template-rows: repeat(6, calc(50vw - 130px));
+  }
 
 }
 .gallery_item p {
