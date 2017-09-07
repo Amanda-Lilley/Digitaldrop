@@ -522,18 +522,18 @@ overflow: hidden;
   padding-top: 20px;
 }
 
-li .active {
+.active {
   background: #fd475f;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-right: 100px;
   color: #fff;
   width: 100%;
 }
+.active a {
+  color: #fff;
+}
 
-li .active:hover {
-  color: #fd475f;
+.active:hover {
   background: none;
 }
 
@@ -542,9 +542,6 @@ li .active:hover {
 /*------- Drop down menu -----------*/
 a {
   text-decoration: none;
-}
-.add {
-  color: #fff;
 }
 .dropit {
   list-style: none;
@@ -556,6 +553,7 @@ a {
 .dropit .dropit-trigger {
   position:relative;
 }
+
 .dropit .dropit-submenu {
   position:absolute;
   top: 100%;
@@ -626,6 +624,7 @@ a {
 .add {
   width: 100px;
   margin-right: 20px;
+  color: #fff;
 }
 
 #all_items {
