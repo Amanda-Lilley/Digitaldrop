@@ -40,7 +40,17 @@
     </div>
     <div class="settings">
       <img class="profile_img" src="images/testimonial3.png" alt="profile image">
-      <p class="profile_settings">Sarah V.<br/><a href="#">Settings <i class="fa fa-cog"> </i></a></p>
+      <p class="profile_settings">Sarah V.<br/></p>
+      <ul class="menu settings_link">
+        <li><a class="btn " href="#">Settings <i class="fa fa-cog"> </i></a>
+          <ul>
+            <li><a href="#"><i class="fa fa-cog"></i>My Account</a></li>
+            <li><a href="#"><i class="fa fa-users"></i>Collaborate</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+          </ul>
+        </li>
+
+      </ul>
     </div>
   </nav>
 
@@ -50,8 +60,8 @@
       <div class="header_content">
 
         <h1 id="all_items">All Items</h1>
-        <ul class="menu">
-          <!-- Does the anchor tag need to go first?-->
+        <ul class="menu top_dropdown">
+
           <li class="add_button">
             <a href="#"><button type="submit" name="add" class="btn add">+ Add</button></a>
             <ul>
@@ -138,7 +148,7 @@
   </script>
   <script type="text/javascript">
     $(".menu").dropit();
-    $("#menu").click(function(){
+    $("#menu").click(function() {
       $("#left_nav").toggleClass("open", 200);
     });
   </script>

@@ -16,6 +16,7 @@
 
 <body class="dashboard">
   <!-- Left Nav -->
+  <a href="#" class="hamburger" id="menu">&#9776;</a>
   <nav id="left_nav" class="left_nav">
     <a href="dashboard.html" class="site-logo header-logo"><img src="images/logo.png" alt="Digital Drop"></a>
     <div class="items">
@@ -92,6 +93,16 @@
 
 
   </div>
+  <script src="js/jquery-3.2.1.min.js">
+  </script>
+  <script src="js/dropit.js">
+  </script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+    $("#menu").click(function() {
+      $("#left_nav").toggleClass("open", 200);
+    });
+  </script>
 
 </body>
 

@@ -482,9 +482,28 @@ footer {
   height: 100vh;
   color: #fff;
   left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+    -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+    -o-transform: translate(-280px,0); /** Opera **/
+    -moz-transform: translate(-280px,0); /** Firefox **/
 }
-.toggle_menu{
-  left: -200px;
+
+.left_nav.open {
+  display:block;
+  width:200px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;
 }
 .main {
   display: grid;
@@ -646,6 +665,34 @@ a {
   padding: 0;
   margin: 0;
 }
+/* Settings menu */
+ul.settings_link .dropit-submenu {
+  position:absolute;
+  top: -190%;
+  left: -100px;
+  z-index: 1000;
+  display: none;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.settings_link li {
+  margin-left: 20px;
+}
+ul.settings_link .dropit-submenu:before {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -8px;
+  right: 10px;
+}
+/* end settings menu */
 .dropit .dropit-open .dropit-submenu {
   display:block;
   background: #fff;
