@@ -111,9 +111,13 @@ button {
 
 
 /* Header */
+/* Rectangle 16: */
+background: rgba(226,226,226,0.36);
 
 header {
-  background: linear-gradient(90deg, #a9a9a9, #e9e9e9);
+  
+background-image: linear-gradient(-48deg, rgba(226,226,226,0.17) 0%, #F7F7F7 84%);
+
 }
 
 .header-logo {
