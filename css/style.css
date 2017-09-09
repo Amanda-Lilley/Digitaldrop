@@ -111,11 +111,10 @@ button {
 
 
 /* Header */
-/* Rectangle 16: */
-background: rgba(226,226,226,0.36);
+
 
 header {
-  
+
 background-image: linear-gradient(-48deg, rgba(226,226,226,0.17) 0%, #F7F7F7 84%);
 
 }
@@ -545,6 +544,9 @@ footer {
 
 
 /* Navigation */
+.name {
+  color: #3f3d3d;
+}
 
 .hamburger {
   position: absolute;
@@ -637,6 +639,9 @@ footer {
   padding-left: 20px;
   color: #3f3d3d;
 }
+.settings {
+  margin-right: 20px;
+}
 .items a {
   font-family: 'URWGeometric', Arial, sans-serif;
   font-size: 1 em;
@@ -676,6 +681,9 @@ footer {
 a {
   text-decoration: none;
 }
+.cog_link a {
+  color: #3f3d3d;
+}
 .dropit {
   list-style: none;
   padding: 0;
@@ -685,12 +693,12 @@ a {
 }
 .dropit .dropit-trigger {
   position: relative;
-  padding-top: 25px;
+
 }
 .dropit .dropit-submenu {
   position: absolute;
   top: 100%;
-  right: 0;
+right: 20px;
   z-index: 1000;
   display: none;
   min-width: 150px;
@@ -702,14 +710,14 @@ a {
 /* Settings menu */
 ul.settings_link .dropit-submenu {
   position: absolute;
-  top: -190%;
-  left: -100px;
-  z-index: 1000;
-  display: none;
-  min-width: 150px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    top: -140px;
+    left: -55px;
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 ul.settings_link li {
   margin-left: 20px;
