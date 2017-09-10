@@ -847,6 +847,9 @@ ul.settings_link .dropit-submenu:before {
   color: #fff;
   margin-top: 21px;
 }
+.gallery_add {
+  margin-top: 0px;
+}
 #all_items {
   margin-right: auto;
   vertical-align: middle;
