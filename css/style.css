@@ -1,8 +1,12 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.ttf');
+  src: url('../fonts/Raleway-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf');
+}
 @font-face {
   font-family: 'URWGeometric';
   src: url('../fonts/URWGeometric-Regular.ttf') format('truetype');
@@ -107,6 +111,7 @@ button {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  vertical-align: middle;
 }
 .btn:hover {
   background-color: #e2e2e2;
@@ -128,6 +133,8 @@ background-image: linear-gradient(-48deg, rgba(226,226,226,0.17) 0%, #F7F7F7 84%
 .header-logo {
   margin-right: auto;
   margin-left: 20px;
+padding-top: 20px;
+
 }
 
 .container {
@@ -153,6 +160,8 @@ background-image: linear-gradient(-48deg, rgba(226,226,226,0.17) 0%, #F7F7F7 84%
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .wrapper p {
@@ -231,7 +240,9 @@ ul {
 
 
 /* Testimonials */
-
+b {
+  font-weight: bold;
+}
 .testimonials {
   background-color: #f7f7f7;
   padding-bottom: 30px;
@@ -255,7 +266,7 @@ ul {
   line-height: 1.5em;
   padding-top: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 4px #000;
+  box-shadow: 0 2px 1px #000;
 }
 
 .profile {
@@ -327,12 +338,22 @@ footer {
   padding-bottom: 5px;
   margin-top: 20px;
 }
-
+.pricing_header {
+  width: 90vw;
+  margin: 0 auto;
+}
+.who {
+  width: 50vw;
+  margin: 0 auto;
+}
 
 /* Media Queries */
 
 @media (min-width: 768px) {
   /* Benefits */
+  .footer-logo {
+    margin-top: 0;
+  }
   .benefits_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -431,7 +452,22 @@ footer {
     padding-right: 2%;
     padding-left: 2%;
   }
+  .pricing_header {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .who {
+    width: 40vw;
+    margin: 0 auto;
+  }
   /* Footer */
+  .footer-links a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .footer-links a:hover {
+    color: #fd475f;
+  }
   .social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -527,7 +563,7 @@ footer {
   display: grid;
   grid-template-rows: 90px 1fr;
   grid-template-areas: "header" "gallery";
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .gallery {
@@ -725,9 +761,7 @@ ul.settings_link .dropit-submenu {
     padding: 0;
     margin: 0;
 }
-ul.settings_link li {
-  margin-left: 20px;
-}
+
 ul.settings_link .dropit-submenu:before {
   content: " ";
   position: absolute;
@@ -811,9 +845,11 @@ ul.settings_link .dropit-submenu:before {
   width: 100px;
   margin-right: 20px;
   color: #fff;
+  margin-top: 21px;
 }
 #all_items {
   margin-right: auto;
+  vertical-align: middle;
 }
 
 /* Main gallery */
