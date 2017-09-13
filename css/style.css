@@ -2,7 +2,6 @@
   font-family: 'Raleway';
   src: url('../fonts/Raleway-Bold.ttf');
 }
-
 @font-face {
   font-family: 'Raleway';
   src: url('../fonts/Raleway-Regular.ttf');
@@ -48,7 +47,7 @@ p {
   font-size: 1.000em;
   line-height: 19px;
   font-weight: 100;
-  text-align: center;
+
 }
 
 nav p a {
@@ -218,7 +217,7 @@ ul {
   list-style: none;
   padding-left: 0;
   padding-bottom: 60px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .title {
@@ -271,11 +270,13 @@ b {
 
 .profile {
   background-color: #e2e2e2;
+  margin-top: 75px;
 }
 
 .profile_img {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: -60px;
 }
 
 
@@ -351,6 +352,16 @@ footer {
 
 @media (min-width: 768px) {
   /* Benefits */
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  p.intro {
+    text-align:center;
+  }
   .footer-logo {
     margin-top: 0;
   }
@@ -557,6 +568,8 @@ footer {
   -moz-transform: translate(0, 0);
   /** Firefox **/
   z-index: 100;
+  display: grid;
+    grid-template-rows: 80px 1fr 70px;
 }
 
 .main {
@@ -702,7 +715,7 @@ footer {
 .profile_img {
   width: 30%;
   padding-left: 10px;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 .active {
   background: #fd475f;
